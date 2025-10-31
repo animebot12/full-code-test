@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.Arslan Toolkit</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Matrix Background -->
+    <div class="matrix-bg" id="matrixBg"></div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <button class="theme-btn" id="themeToggle">
+            <i class="fas fa-sun"></i> Light Mode
+        </button>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1 class="main-title">Mr.Arslan Toolkit</h1>
+            <p class="subtitle">Ultimate Collection of Premium Digital Tools &amp; Utilities</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" class="search-bar" id="searchInput" placeholder="Search for tools... (e.g., SMS, TikTok, WhatsApp)">
+            <div class="search-icon" onclick="performSearch()">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+
+        <!-- Tools Grid -->
+        <div class="tools-grid" id="toolsGrid">
+            <!-- Tools will be dynamically loaded here -->
+        </div>
+
+        <div class="coming-soon">
+            🚀 More Premium Tools Coming Soon...
+        </div>
+
+        <div class="footer">
+            <div class="contact-section">
+                <a href="tools/contact/index.html" class="contact-btn">
+                    <i class="fas fa-envelope"></i> Email Support
+                </a>
+                <a href="https://chat.whatsapp.com/Bd3Yo93XEDCCcw2mi7jsB6" class="contact-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Help
+                </a>
+                <button class="contact-btn" onclick="shareToolkit()">
+                    <i class="fas fa-share-alt"></i> Share Toolkit
+                </button>
+            </div>
+            <div class="creator">
+                <i class="fas fa-code"></i> Crafted by Mr.Arslan
+            </div>
+        </div>
+    </div>
+
+    <!-- Share Modal - No Close Button -->
+    <div class="share-modal" id="shareModal">
+        <div class="share-content">
+            <h2 class="share-title">Share This Toolkit</h2>
+            <p class="share-message">Spread the word about these amazing tools with your friends!</p>
+            <div class="share-buttons">
+                <a href="#" class="share-btn" onclick="shareSocial('whatsapp')">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="#" class="share-btn" onclick="shareSocial('facebook')">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="#" class="share-btn" onclick="shareSocial('twitter')">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+            </div>
+            <p class="share-note">Please share to support our work! 🙏</p>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
